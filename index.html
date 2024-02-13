@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div h3:first-child {
+            color: pink;
+        }
+
+        #greycol {
+            color: grey;
+        }
+
+        div div p {
+            color: red;
+        }
+
+        div+h3+p {
+            color: green;
+        }
+
+        .yellow {
+            color: yellow;
+        }
+
+
+
+        .monday:not(:visited) {
+            background-color: chartreuse;
+        }
+
+        .monday>li:hover {
+            background-color: tomato;
+        }
+
+        .tuesday>li:not(:hover) {
+            background-color: black;
+            color: white;
+        }
+
+        .wednesday>h2>a:visited {
+            font-size: 70px;
+        }
+
+        .thursday>li>a:focus {
+            color: crimson;
+            border: 10px solid salmon;
+        }
+
+        .thursday h2:first-child {
+            color: hotpink;
+        }
+
+        .friday h2:first-child {
+            color: sandybrown;
+        }
+
+        .friday li:last-child {
+            color: fuchsia;
+        }
+
+        .friday li:nth-child(2n+2){
+            background-color: aquamarine;
+        }
+
+        .friday li:nth-child(2n+1) {
+            background-color: darkorange;
+        }
+    </style>
+</head>
+<body>
+    <div class="text-box">
+        <h3>Paint me pink (color:pink).</h3>
+        <p>We don’t need to stylize this element.</p>
+        <p id='greycol'>Paint me grey (color:grey).</p>
+        <div>We don’t need to stylize this element.</div>
+        <div><p>Paint me red (color:red).</p></div>
+        <h3> We don’t need to stylize this element.</h3>
+        <p>Paint me green (color:green).</p>
+        <p class='yellow'>Paint me yellow (color:yellow).</p>
+    </div>
+
+    <div>
+        <div>
+            <ul class="monday">
+                <h2>Monday</h2>
+                <li>Math</li>
+                <li>Physics</li>
+                <li>Chemistry</li>
+                <li>Biology</li>
+                <li>Astronomy</li>
+            </ul>
+        </div>
+        <div>
+            <ul class="tuesday">
+                <h2>Tuesday</h2>
+                <li>Biology</li>
+                <li>Astronomy</li>
+                <li>Math</li>
+                <li>Physics</li>
+                <li>Chemistry</li>
+            </ul>
+        </div>
+        <div>
+            <ul class="wednesday">
+                <h2><a href="#">Wednesday</a></h2>
+                <li>Biology</li>
+                <li>Math</li>
+                <li>Physics</li>
+                <li>Astronomy</li>
+                <li>Chemistry</li>
+            </ul>
+        </div>
+        <div>
+            <ul class="thursday">
+                <h2>Thursday</h2>
+                <li><a href="">Math</a></li>
+                <li>Physics</li>
+                <li>Biology</li>
+                <li>Astronomy</li>
+                <li>Chemistry</li>
+            </ul>
+        </div>
+        <div>
+            <ul class="friday">
+                <h2>Friday</h2>
+                <li>Chemistry</li>
+                <li>Biology</li>
+                <li>Astronomy</li>
+                <li>Math</li>
+                <li>Physics</li>
+            </ul>
+    </div>
+</body>
+</html>
